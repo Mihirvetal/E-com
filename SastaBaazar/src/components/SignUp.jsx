@@ -27,13 +27,13 @@ const SignUp = () => {
   };
 
   return (
-    <div className="flex min-h-screen">
+    <div className="flex h-266">
       {/* Image section with 4/5 width */}
-      <div className="flex-1 bg-cover bg-center" style={{ backgroundImage: "url('your-image-url.jpg')" }}></div>
+      <div className="flex-4 bg-cover bg-center" style={{ backgroundImage: "url('https://plus.unsplash.com/premium_photo-1734713078804-818d9e818c9c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2MXx8fGVufDB8fHx8fA%3D%3D')" }}></div>
       
       {/* Sign Up form section with 1/5 width */}
-      <div className="flex-1 flex items-center justify-center bg-gray-100">
-        <div className="w-full max-w-md rounded-lg bg-white p-8 shadow-lg">
+      <div className="flex-1 flex items-center justify-center ">
+        <div className="w-800 max-w-md rounded-lg bg-white p-8 ">
           <h2 className="mb-6 text-center text-2xl font-bold text-gray-800">Sign Up</h2>
 
           <form onSubmit={handleSignUp} className="space-y-4 text-xl">
