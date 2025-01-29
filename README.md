@@ -24,16 +24,16 @@ This is a fully-functional e-commerce web application built with React.js, Node.
   - GitHub (for version control)
 
 - **Home Page**
-- ![image](https://github.com/user-attachments/assets/2ef2a02e-6db4-4c7e-9b04-445f699c1ae4)
+ ![image](https://github.com/user-attachments/assets/2ef2a02e-6db4-4c7e-9b04-445f699c1ae4)
 
 
 - **Login Page**
-- ![image](https://github.com/user-attachments/assets/31780a70-bebe-47bb-9bfc-7ef0c8af13b6)
+ ![image](https://github.com/user-attachments/assets/31780a70-bebe-47bb-9bfc-7ef0c8af13b6)
 
 - **SignUp Page**
 ![image](https://github.com/user-attachments/assets/f1305df5-fccd-47ca-8b59-67cfb1de90d6)
 
--**Pages**
+- **Pages**
 ![image](https://github.com/user-attachments/assets/1741baf4-9ed7-41fa-9f9d-78bfc34f72aa)
 ![image](https://github.com/user-attachments/assets/9d1afb40-bf9c-48db-be4f-bc1c51b5eda3)
 
