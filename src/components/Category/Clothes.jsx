@@ -2,8 +2,8 @@
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import Shimmer from "./Shimmer";
-import Show from "./Show";
+import Shimmer from "../Shimmer";
+import Show from "../Cart/Show";
 const Clothes = () => {
   const [data, setData] = useState([]);
   const [shimmer, setShimmer] = useState(true);

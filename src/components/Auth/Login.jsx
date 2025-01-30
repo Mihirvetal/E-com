@@ -1,8 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { doSignInWithEmailAndPassword } from "../Firebase/auth";
-import { useAuth } from "../contexts/authContext";
+import { doSignInWithEmailAndPassword } from "../../Firebase/auth";
 
 const Login = () => {
   const navigate = useNavigate();

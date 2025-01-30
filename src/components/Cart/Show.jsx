@@ -4,7 +4,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Show = ({ text, search, setSearch, filteredData, addToCart }) => {
+import { useCart } from "../Cart/CartContext";
+
+const Show = ({ text, search, setSearch, filteredData }) => {
+  const { addToCart } = useCart();
+
   return (
     <>
       <div className="text-center">
@@ -20,7 +24,10 @@ const Show = ({ text, search, setSearch, filteredData, addToCart }) => {
       <div className="w-300 m-auto">
         <ul className="grid grid-cols-4 m-auto gap-5 mt-10">
           {filteredData.map((item) => (
-            <div className="" key={item.id}>
+            <div
+              key={item.id}
+              className="transform transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl hover:bg-gray-50 rounded-lg"
+            >
               <Link to={`/products/${item.id}`}>
                 <img
                   className="w-80 rounded-xl"
@@ -42,8 +49,8 @@ const Show = ({ text, search, setSearch, filteredData, addToCart }) => {
                 </div>
               </Link>
               <button
-                onClick={() => addToCart(item)} // Trigger addToCart function from props
-                className="mt-2 px-4 py-2 bg-blue-500 text-white rounded"
+                onClick={() => addToCart(item)}
+                className="mt-2 px-4 py-2 bg-sky-100 text-black text-xl rounded"
               >
                 Add to Cart
               </button>

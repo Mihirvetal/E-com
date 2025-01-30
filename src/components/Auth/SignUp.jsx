@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { doCreateUserWithEmailAndPassword } from '../Firebase/auth'
+import { doCreateUserWithEmailAndPassword } from '../../Firebase/auth'
 
 const SignUp = () => {
   const navigate = useNavigate();
@@ -28,10 +28,8 @@ const SignUp = () => {
 
   return (
     <div className="flex h-266">
-      {/* Image section with 4/5 width */}
       <div className="flex-3 bg-cover bg-center" style={{ backgroundImage: "url('https://plus.unsplash.com/premium_photo-1734713078804-818d9e818c9c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2MXx8fGVufDB8fHx8fA%3D%3D')" }}></div>
       
-      {/* Sign Up form section with 1/5 width */}
       <div className="flex-1 flex items-center justify-center ">
         <div className="w-800 max-w-md rounded-lg bg-white p-8 ">
           <h2 className="mb-6 text-center text-2xl font-bold text-gray-800">Sign Up</h2>

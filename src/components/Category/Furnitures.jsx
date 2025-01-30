@@ -1,20 +1,19 @@
-/* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import Shimmer from "./Shimmer";
-import Show from "./Show";
-import ProductsDetails from "./ProductsDetails";
-const Display = () => {
+import Shimmer from "../Shimmer";
+import Show from "../Cart/Show";
+const Furnitures = () => {
   const [data, setData] = useState([]);
   const [shimmer, setShimmer] = useState(true);
   const [search, setSearch] = useState("");
   useEffect(() => {
     axios
-      .get("https://api.escuelajs.co/api/v1/products")
+      .get("https://api.escuelajs.co/api/v1/categories/3/products")
       .then((res) => {
         setData(res.data);
         setShimmer(false);
+        console.log(res.data);
       })
       .catch((er) => {
         console.log(er);
@@ -23,16 +22,18 @@ const Display = () => {
   if (shimmer) {
     return <Shimmer />;
   }
-  const text = "Home"
+  const text = "Furnitures";
   const filteredData = data.filter((item) =>
     item.title.toLowerCase().includes(search.toLowerCase())
   );
   return (
-    <>
-      <ProductsDetails data={data}/>
-      <Show text={text} search={search} setSearch={setSearch} filteredData={filteredData}  />
-    </>
+    <Show
+      text={text}
+      search={search}
+      setSearch={setSearch}
+      filteredData={filteredData}
+    />
   );
 };
 
-export default Display;
+export default Furnitures;
